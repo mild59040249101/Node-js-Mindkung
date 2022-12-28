@@ -1,0 +1,246 @@
+*{
+    font-family: monospace;
+}
+body{
+    background: f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    margin-bottom: 300px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700; 
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.services .card-body i{
+    font-size: 50px;
+ }
+.team .card-body i{
+    font-weight: 20px;
+ }
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+ }
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+ }
+.collapse ul li a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+ }
+ .collapse ul li a:hover,
+ .collapse ul li a:focus{
+    border-bottom: 2px solid rgb(186, 199, 8);
+ }
+ .collapse ul li.active a {
+    border-bottom: 2px solid yellow;
+ } 
+ .OutBox1{
+    width: 300px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+ }
+ .Innerbox1{
+    width: 75%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#9e4d0a,#e67744);
+    animation:html 4s ease-in-out forwards;
+ }
+ .OutBox2{
+    width: 300px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+ }
+ .Innerbox2{
+    width: 65%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#0e8d9e,#3adaf0);
+    animation:css 4s ease-in-out forwards;
+ }
+ .OutBox3{
+    width: 300px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+ }
+ .Innerbox3{
+    width: 50%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#afc725,#f1f523);
+    animation:javascript  4s ease-in-out forwards;
+ }
+ .OutBox4{
+    width: 300px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+ }
+ .Innerbox4{
+    width: 60%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#8e24a8,#cb24ec);
+    animation:bootstrap 4s ease-in-out forwards;
+ }
+ .OutBox5{
+    width: 300px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+ }
+ .Innerbox5{
+    width: 80%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#0f808f,#1da6be);
+    animation:wordpress  4s ease-in-out forwards;
+ }
+ @keyframes html {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 75%;
+    }
+ }
+ @keyframes css {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 65%;
+    }
+ }
+ @keyframes javascript {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 50%;
+    }
+ }
+ @keyframes bootstrap {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 60%;
+    }
+ }
+ @keyframes wordpress {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 85%;
+    }
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:767px){
+     .navbar-nav{
+        text-align: center;
+     }
+     .carousel-caption{
+        bottom: 125px;
+     }
+     .carousel-caption h5{
+        font-size: 17px;
+     }
+     .carousel-caption a{
+        padding: 10px 15px;
+     }
+     .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+     }
+     .about-text{
+        padding-top: -50px;
+     }
+     .card{
+        margin-bottom: 30px;
+     }
+}
