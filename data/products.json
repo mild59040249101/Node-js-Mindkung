@@ -1,24 +1,34 @@
 {
     "products": [
       {
+        "id":0,
         "productsTitle": "น้ำยาล้างจาน",
         "productsDescription": "น้ำยาล้างจานสูตร 1 ดีจริง",
         "productsPrice": 45
       },
       {
+        "id":1,
         "productsTitle": "น้ำยาล้างจาน 2",
         "productsDescription": "น้ำยาล้างจานสูตร 2 ดีจริง",
         "productsPrice": 55
       },
       {
+        "id":2,
         "productsTitle": "น้ำยาล้างจาน 3",
         "productsDescription": "น้ำยาล้างจานสูตร 3 ดีจริง",
         "productsPrice": 65
       },
       {
+        "id":3,
         "productsTitle": "น้ำยาล้างจาน 4",
         "productsDescription": "น้ำยาล้างจานสูตร 4 ดีจริง",
         "productsPrice": 75
+      },
+      {
+        "id":4,
+        "productsTitle": "น้ำยาล้างจาน 5",
+        "productsDescription": "น้ำยาล้างจานสูตร 5 ดีเกิ้น",
+        "productsPrice": 100
       }
     ]
   }
