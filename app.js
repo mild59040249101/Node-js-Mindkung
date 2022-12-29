@@ -2,15 +2,30 @@ const express = require('express');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path')
+const products = require("./data/products.json")
 const app = express();
 const PORT = process.env.PORT;
+const productRouter = express.Router();
 
 app.use(morgan('combined'))
 app.use(express.static(path.join(__dirname,"/public/")));
 
+app.set("views","./src/views");
+app.set("view engine", "ejs")
+
+productRouter.route("/").get((req,res) =>{
+    res.render("products",
+        products,
+    );
+});
+productRouter.route("/1").get((req,res) =>{
+    res.send("Hello Word !! I'm Product1")
+});
+app.use("/products", productRouter)
+
 app.get("/", (req,res) =>{
 
-    res.send('Hello MindKung59040249101 Hight scoll');
+    res.render('index',{username: 'Handsome555+', customers: ["Nattpong","nickky","tomsy",]});
 })
 
 app.listen(PORT, ()=>{

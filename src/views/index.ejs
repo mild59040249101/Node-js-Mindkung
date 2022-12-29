@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="img.png" href="/Profile.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- set DEBUG=app & node app.js -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><span class="text-warning">Mind</span>Kung</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="#">หน้าแรก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">เกี่ยวกับ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">programming language</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">products</a>   
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">ทีมงาน</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- slider -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/slider-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>Programming Language</h5>
+              <p>7 ภาษา Programming Language มาแรง 1. JavaScript · 2. Python · 3. Golang · 4. Kotlin · 5. Swift · 6. Dart · 7. Java.</p>
+              <p><a href="#about" class="btn btn-warning mt-3">อ่านเพิ่มเติม</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/slider-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>apply for programmer</h5>
+              <p>งานในสายไอทีหรือดิจิทัลที่มีความเฉพาะทาง และเป็นที่ต้องการของตลาดสูง โดยมีเงินเดือนเริ่มต้นอยู่ที่ 18,000 – 25,000 บาท และสูงที่สุดที่ 40,000 บาท ซึ่งอาจมีการปรับอีกเล็กน้อย โดยเฉพาะสายอาชีพ โปรแกรมเมอร์ ที่มีความสำคัญต่อบริษัทเป็นอย่างมาก.</p>
+              <p><a href="#about" class="btn btn-warning mt-3">อ่านเพิ่มเติม</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/slider-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>front-end back-end</h5>
+              <p>frontend คือ การออกแบบเว็บไซต์ไม่ว่าจะเป็น หน้าโฮม หน้าเว็บเพจ เนื้อหาต่างๆ รูปภาพ ลิงก์ ให้เข้าใจง่าย สะดวก และสวยงาม backend คือ จัดการหลังบ้านของเว็บไซต์เพื่อป้องกันไม่ให้ใครเข้าถึงข้อมูลได้รวมไปจนถึง จัดการฐานข้อมูล โครงสร้างเว็บไซต์ การเขียนโค้ดควบคุม.</p>
+              <p><a href="#about" class="btn btn-warning mt-3">อ่านเพิ่มเติม</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- about -->
+
+      <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="/Aboout.jpg" alt="" class=img-fluid>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2 style="font-size: 30px;">เกี่ยวกับเรา<br></h2>
+                        <p style="font-size: 15px;">จบจากมหาวิทยาลัยราชภัฏอุดรธานี คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</p>
+                        <div class="container">
+                          <button class="btn btn-success" 
+                          data-bs-target="#collapse-content"
+                          data-bs-toggle="collapse">ดูข้อมูลเพิ่มเติม</button>
+                          <!-- content -->
+                          <div id="collapse-content" class="collapse">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>ชื่อ: ณัฐพงษ์ ภูริศรี<br>
+                                  ชื่อเล่น: มายน์<br>
+                                Age: 25<br>
+                                ศาสนา: พุทธ<br>
+                                สัญชาติ: ไทย<br>
+                                ส่วนสูง: 175เซ็นติเมตร<br>
+                                น้ำหนัก: 57กิโลกรัม<br>
+                                สถานภาพ: โสด
+                              </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+      </section>
+
+      <!-- services -->
+
+      <section id="services" class="services section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                <h2>ภาษา Programming</h2>
+                <p>การจัดการเกี่ยวกับภาษา <br> ในการพัฒนาทางด้าน Programmer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                  <i class="bi bi-windows "></i>
+                  <h3 class="card-title">ภาษา html</h3>
+                  <p class="lead">ผลการค้นหาประมาณ 108,000,000 รายการ (0.37 วินาที) 
+                    HTML ย่อมาจาก HyperText Markup Language เป็น ภาษาคอมพิวเตอร์ที่ใช้สร้างหน้าเว็บ (Web Page) ในรูปแบบของ ไฟล์ HTML (คือไฟล์ที่มีนามสกุลเป็น .htm หรือ .html) ซึ่งมีเว็บเบ ราว์เซอร์ (Web Browser) </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                  <i class="bi bi-stack"></i>
+                  <h3 class="card-title">ภาษา CSS</h3>
+                  <p class="lead">หรือที่ชื่อเต็มๆ คือ "Cascading Style Sheets" มันเป็นภาษาที่ใช้พัฒนาลักษณะรูปแบบ ใส่พื้นหลัง หรือเพิ่มกรอบข้อความ ของหน้าเว็บ เพื่อเพิ่มความสวยงามให้หน้าเว็บของเรา CSS สามารถกำหนดรูปแบบพร้อมกันทีเดียวได้ </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                  <i class="bi bi-robot"></i>
+                  <h3 class="card-title">ภาษา javascript</h3>
+                  <p class="lead">ผลการค้นหาประมาณ 54,500,000 รายการ (0.42 วินาที) 
+                    JavaScript เป็นภาษาโปรแกรมที่นักพัฒนาใช้ในการสร้างหน้าเว็บแบบอินเทอร์แอคทีฟ ตั้งแต่การรีเฟรชฟีดสื่อโซเชียลไปจนถึงการแสดงภาพเคลื่อนไหวและแผนที่แบบอินเทอร์แอคทีฟ.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill -->
+      <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                <h2 style="font-size: 30px;">ทักษะ Programmer</h2>
+                <p style="font-size: 18px;">Skill การใช้ภาษาต่างๆในการพัฒนาชิ้นงาน</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" >
+            <div class="col-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 mx-auto">
+              <div class="Myskill py-5;">
+                <h1>My Skill</h1> 
+                <div class="d-flex">
+                  <span>HTML</span>
+                  <div class="OutBox1">
+                    <div class="Innerbox1"> 
+                    </div>
+                  </div>
+                  <span>75%</span>
+                </div>
+                <div class="d-flex">
+                  <span>CSS</span>
+                  <div class="OutBox2">
+                    <div class="Innerbox2"> 
+                    </div>
+                  </div>
+                  <span>65%</span>
+                </div>
+                <div class="d-flex">
+                  <span>JAVASCRIPT</span>
+                  <div class="OutBox3">
+                    <div class="Innerbox3"> 
+                    </div>
+                  </div>
+                  <span>50%</span>
+                </div>
+                <div class="d-flex">
+                  <span>BOOTSTRAP</span>
+                  <div class="OutBox4">
+                    <div class="Innerbox4"> 
+                    </div>
+                  </div>
+                  <span>60%</span>
+                </div>
+                <div class="d-flex">
+                  <span>WORDPRESS </span>
+                  <div class="OutBox5">
+                    <div class="Innerbox5"> 
+                    </div>
+                  </div>
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Portfolio -->
+       <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                <h2 style="font-size: 30px;">โปรเจคของพวกเรา</h2>
+                <p style="font-size: 18px;">ผลงานต่างๆของเราที่ทำการใช้ภาษาต่างๆในการพัฒนา</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-center bg-white pb-2">
+                <div class="card-body text-dark">
+                  <div class="img-area mb-4">
+                    <img src="/project-1.jpg" alt="" class="img-fluid">
+                  </div>
+                  <h3 class="card-title">เว็บEcommerce</h3>
+                  <p class="lead">สำหรับคนไทย การเริ่มต้นทำธุรกิจด้วยการเปิดร้านค้าบน Social media ถือว่าเป็นวิธีที่ง่ายที่สุด และง่ายต่อการสร้างแบรนด์ แต่ถ้าคุณอยากให้ธุรกิจเติบโตยิ่งขึ้น .</p>
+                  <button class="btn bg-warning text-dark">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-center bg-white pb-2">
+                <div class="card-body text-dark">
+                  <div class="img-area mb-4">
+                    <img src="/project-3.jpg" alt="" class="img-fluid">
+                  </div>
+                  <h3 class="card-title">เว็บไซต์โปรไฟล์</h3>
+                  <p class="lead">แสดงโปรไฟล์บุคคลบนหน้าของคุณด้วย Web Part บุคคล · ถ้าหน้าของคุณไม่ได้อยู่ในโหมดแก้ไข ให้คลิก แก้ไข ที่ด้านบนขวาของหน้า · คลิก + แล้วเลือก บุคคล จากรายการ Web Part..</p>
+                  <button class="btn bg-warning text-dark">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-center bg-white pb-2">
+                <div class="card-body text-dark">
+                  <div class="img-area mb-4">
+                    <img src="/project-2.jpg" alt="" class="img-fluid">
+                  </div>
+                  <h3 class="card-title">Web application</h3>
+                  <p class="lead">Web Application คือแอปที่ถูกเขียนขึ้นมาให้สามารถเปิดใช้ใน Web browser ได้โดยตรง ไม่ต้องโหลด Application แบบเต็มๆ ลงเครื่อง ทำให้โดยรวมแล้วกินทรัพยากรค่อนข้างต่ำ ...</p>
+                  <button class="btn bg-warning text-dark">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team" class="team section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                <h2>ทีมงานพัฒนาWebSite</h2>
+                <p></p>
+              </div>
+            </div>
+          </div>
+         <div class="row">
+          <div class="col-12 col-md-6 col-lg-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="/team-3.jpg" alt="" class="img-fluid rounded-circle">
+                <h3 class="card-title py-2">Mind Nattpong</h3>
+                <p class="card-text">หล่อนิสัยดี..แถมออบอ้อมอารีกับทุกคน..ผู้บ้านAnime.</p>
+                <p class="socials">
+                  <a href="https://www.facebook.com/nattpong.puarisri"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                  <a href="https://www.instagram.com/mine.ong/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+     
+      <!-- footer -->
+
+      <footer  class="bg-dark p-2 text-center">
+        <div class="container">
+          <p class="text-white">@Website By MindNattpong</p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
