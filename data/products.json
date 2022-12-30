@@ -1,5 +1,4 @@
-{
-    "products": [
+[
       {
         "id":0,
         "productsTitle": "น้ำยาล้างจาน",
@@ -31,4 +30,4 @@
         "productsPrice": 100
       }
     ]
-  }
+    
