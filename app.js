@@ -2,10 +2,9 @@ const express = require('express');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path')
-const products = require("./data/products.json")
 const app = express();
 const PORT = process.env.PORT;
-const productRouter = express.Router();
+const producstsRouter = require("./src/router/productsRouter");
 
 app.use(morgan('combined'))
 app.use(express.static(path.join(__dirname,"/public/")));
@@ -25,7 +24,7 @@ productRouter.route("/:id").get((req,res) =>{
         product: products[id],
     })
 });
-app.use("/products", productRouter)
+app.use("/products", productsRouter)
 
 app.get("/", (req,res) =>{
 
